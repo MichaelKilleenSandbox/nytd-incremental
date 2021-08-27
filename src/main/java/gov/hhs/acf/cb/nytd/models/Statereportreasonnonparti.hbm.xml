@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping">
+<!-- Generated Aug 13, 2013 11:55:42 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="gov.hhs.acf.cb.nytd.models.Statereportreasonnonparti" table="STATEREPORTREASONNONPARTI">
+        <id name="statereportid" type="long">
+            <column name="STATEREPORTID" precision="22" scale="0" />
+            <generator class="foreign">
+                <param name="property">statereport</param>
+            </generator>
+        </id>
+        <one-to-one name="statereport" class="gov.hhs.acf.cb.nytd.models.Statereport" constrained="true"></one-to-one>
+        <property name="youthdeclined" type="string">
+            <column name="YOUTHDECLINED" length="20" />
+        </property>
+        <property name="parentdeclined" type="string">
+            <column name="PARENTDECLINED" length="20" />
+        </property>
+        <property name="incapacitated" type="string">
+            <column name="INCAPACITATED" length="20" />
+        </property>
+        <property name="incarcerated" type="string">
+            <column name="INCARCERATED" length="20" />
+        </property>
+        <property name="runawaymissing" type="string">
+            <column name="RUNAWAYMISSING" length="20" />
+        </property>
+        <property name="unablelocate" type="string">
+            <column name="UNABLELOCATE" length="20" />
+        </property>
+        <property name="death" type="string">
+            <column name="DEATH" length="20" />
+        </property>
+        <property name="createdate" type="calendar">
+            <column name="CREATEDATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>

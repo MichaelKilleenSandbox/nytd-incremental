@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping">
+<!-- Generated Aug 13, 2013 11:55:42 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="gov.hhs.acf.cb.nytd.models.Statereportdemographics" table="STATEREPORTDEMOGRAPHICS">
+        <id name="statereportid" type="long">
+            <column name="STATEREPORTID" precision="22" scale="0" />
+            <generator class="foreign">
+                <param name="property">statereport</param>
+            </generator>
+        </id>
+        <one-to-one name="statereport" class="gov.hhs.acf.cb.nytd.models.Statereport" constrained="true"></one-to-one>
+        <property name="malestr" type="string">
+            <column name="MALESTR" length="20" />
+        </property>
+        <property name="male" type="double">
+            <column name="MALE" precision="22" scale="5" />
+        </property>
+        <property name="femalestr" type="string">
+            <column name="FEMALESTR" length="20" />
+        </property>
+        <property name="female" type="double">
+            <column name="FEMALE" precision="22" scale="5" />
+        </property>
+        <property name="whitestr" type="string">
+            <column name="WHITESTR" length="20" />
+        </property>
+        <property name="white" type="double">
+            <column name="WHITE" precision="22" scale="5" />
+        </property>
+        <property name="blackstr" type="string">
+            <column name="BLACKSTR" length="20" />
+        </property>
+        <property name="black" type="double">
+            <column name="BLACK" precision="22" scale="5" />
+        </property>
+        <property name="amindstr" type="string">
+            <column name="AMINDSTR" length="20" />
+        </property>
+        <property name="amind" type="double">
+            <column name="AMIND" precision="22" scale="5" />
+        </property>
+        <property name="asianstr" type="string">
+            <column name="ASIANSTR" length="20" />
+        </property>
+        <property name="asian" type="double">
+            <column name="ASIAN" precision="22" scale="5" />
+        </property>
+        <property name="hawaiianstr" type="string">
+            <column name="HAWAIIANSTR" length="20" />
+        </property>
+        <property name="hawaiian" type="double">
+            <column name="HAWAIIAN" precision="22" scale="5" />
+        </property>
+        <property name="unknownstr" type="string">
+            <column name="UNKNOWNSTR" length="20" />
+        </property>
+        <property name="unknown" type="double">
+            <column name="UNKNOWN" precision="22" scale="5" />
+        </property>
+        <property name="hispanicstr" type="string">
+            <column name="HISPANICSTR" length="20" />
+        </property>
+        <property name="hispanic" type="double">
+            <column name="HISPANIC" precision="22" scale="5" />
+        </property>
+        <property name="declinedstr" type="string">
+            <column name="DECLINEDSTR" length="20" />
+        </property>
+        <property name="declined" type="double">
+            <column name="DECLINED" precision="22" scale="5" />
+        </property>
+        <property name="fostercarestr" type="string">
+            <column name="FOSTERCARESTR" length="20" />
+        </property>
+        <property name="fostercare" type="double">
+            <column name="FOSTERCARE" precision="22" scale="5" />
+        </property>
+        <property name="tribestr" type="string">
+            <column name="TRIBESTR" length="20" />
+        </property>
+        <property name="tribe" type="double">
+            <column name="TRIBE" precision="22" scale="5" />
+        </property>
+        <property name="deliquentstr" type="string">
+            <column name="DELIQUENTSTR" length="20" />
+        </property>
+        <property name="deliquent" type="double">
+            <column name="DELIQUENT" precision="22" scale="5" />
+        </property>
+        <property name="espedustr" type="string">
+            <column name="ESPEDUSTR" length="20" />
+        </property>
+        <property name="espedu" type="double">
+            <column name="ESPEDU" precision="22" scale="5" />
+        </property>
+        <property name="createdate" type="calendar">
+            <column name="CREATEDATE" length="7" />
+        </property>
+    </class>
+</hibernate-mapping>
