@@ -2,7 +2,6 @@ package gov.hhs.acf.cb.nytd.util;
 
 import gov.hhs.acf.cb.nytd.models.Element;
 import gov.hhs.acf.cb.nytd.models.helper.TableDatumBean;
-import gov.hhs.acf.cb.nytd.models.helper.TableFieldBean;
 import org.apache.log4j.Logger;
 
 import java.io.File;
@@ -304,17 +303,17 @@ public class CommonFunctions
 		}
 	}
 	
-	public static String getSPSSFIELDNAME(TableFieldBean field)
-	{
-		
-		
-		if(Constants.SPSS_FIELD_NAMES.containsKey(field.getName()))
-		{
-			return Constants.SPSS_FIELD_NAMES.get(field.getName());
-		}
-		
-		return field.getName().toUpperCase();
-	}
+//	public static String getSPSSFIELDNAME(TableFieldBean field)
+//	{
+//
+//
+//		if(Constants.SPSS_FIELD_NAMES.containsKey(field.getName()))
+//		{
+//			return Constants.SPSS_FIELD_NAMES.get(field.getName());
+//		}
+//
+//		return field.getName().toUpperCase();
+//	}
 	
 	/*
 	 * Returns spss-code equivalent of the element values.

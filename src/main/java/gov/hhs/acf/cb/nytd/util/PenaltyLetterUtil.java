@@ -732,8 +732,8 @@ public class PenaltyLetterUtil
                     || user.isSecondaryStateRoleStateAuthorized()
                     || user.hasPrivilege(Constants.PRIV_CAN_ADMIN_ALL_USERS))
                 &&
-                    (org.apache.commons.codec.binary.StringUtils.equals(transmissionType, Constants.REGULAR_TRANSMISSION)
-                    || org.apache.commons.codec.binary.StringUtils.equals(transmissionType, Constants.CORRECTED_TRANSMISSION));
+                    (StringUtils.equals(transmissionType, Constants.REGULAR_TRANSMISSION)
+                    || StringUtils.equals(transmissionType, Constants.CORRECTED_TRANSMISSION));
         }
         
         /**
@@ -749,7 +749,7 @@ public class PenaltyLetterUtil
             if (canGeneratePenaltyLetter(transmissionType, user)){
                 return user.hasPrivilege(Constants.PRIV_CAN_ADMIN_ALL_USERS)
                         &&
-                        org.apache.commons.codec.binary.StringUtils.equals(transmissionType, Constants.REGULAR_TRANSMISSION);
+                        StringUtils.equals(transmissionType, Constants.REGULAR_TRANSMISSION);
             }
             return false;
         }

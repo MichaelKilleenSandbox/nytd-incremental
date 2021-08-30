@@ -2,7 +2,8 @@ package gov.hhs.acf.cb.nytd.util;
 
 import gov.hhs.acf.cb.nytd.models.SiteUser;
 import gov.hhs.acf.cb.nytd.service.TransmissionServiceP3;
-import org.apache.commons.codec.binary.StringUtils;
+import org.apache.commons.lang3.StringUtils;
+
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;

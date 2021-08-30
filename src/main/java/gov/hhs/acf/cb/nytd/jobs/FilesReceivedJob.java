@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  * User: 13873
  * Date: Jul 27, 2010
  */
-public class FilesReceivedJob extends QuartzJobBean implements StatefulJob
+public class FilesReceivedJob extends QuartzJobBean
 {
 	// job data map keys
 	public static final String FILE_PROCESSING_DIR = "fileProcessingDir";
